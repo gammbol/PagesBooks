@@ -29,7 +29,7 @@ $paddingY: 0.813rem;
 $paddingX: 2.063rem;
 
 // list
-$list-style-image: "/images/list-style-image.svg";
+$list-style-image: "../../images/list-style-image.svg";
 
 * { @include global.global }
 .header { @include header.header }

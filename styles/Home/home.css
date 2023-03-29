@@ -110,7 +110,7 @@
 }
 
 .button {
-  color: #1B3764;
+  color: #1B3764 !important;
   padding: 0.813rem 2.063rem;
   outline: none;
   border: none;
@@ -249,7 +249,7 @@
 }
 
 .stats__list {
-  list-style-image: url("/images/list-style-image.svg");
+  list-style-image: url("../../images/list-style-image.svg");
   display: flex;
   justify-content: flex-start;
   gap: 5rem;
