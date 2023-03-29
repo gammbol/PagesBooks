@@ -89,6 +89,10 @@ $list-style-image: "../../images/list-style-image.svg";
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   width: 100%;
   max-width: 1300px;
