@@ -123,12 +123,12 @@
   .header__container {
     padding-top: 10px !important;
   }
-  .header__content {
+  .content__container {
     gap: 2rem !important;
     flex-direction: column-reverse;
-    padding: 20px 0 !important;
+    padding: 20px 0.5rem !important;
   }
-  .content__container {
+  .content__wrapper {
     align-content: center;
   }
   .content__welcome {
@@ -162,15 +162,30 @@
     font-size: 1.5rem !important;
   }
 }
-.header__content {
-  padding: 5.938rem 0 7.188rem;
+.container {
+  width: 100%;
+  max-width: 1300px;
+}
+
+.hero__content * {
+  color: #fff;
+}
+
+.hero__content {
+  background: #1B3764;
+  display: flex;
+  justify-content: center;
+}
+
+.content__container {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 6rem;
+  padding: 5.938rem 0.313rem 7.188rem;
 }
 
-.content__container {
+.content__wrapper {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -197,6 +212,7 @@
 .content__desc {
   margin-top: 32px;
   color: #B4C7E7;
+  font-family: Inter, "sans-serif";
   font-size: 1.188rem;
 }
 
