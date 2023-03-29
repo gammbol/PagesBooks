@@ -1,0 +1,76 @@
+$primary-color: #1B3764;
+$secondary-color: #FFCA42;
+$additional-color: #F6F8FC;
+
+$primary-font: Cardo, "serif";
+$secondary-font: Inter, "sans-serif";
+
+@mixin header() {
+  background: $primary-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin header__container {
+  width: 100%;
+  max-width: 1300px;
+  padding-top: 2.7rem;
+}
+
+@mixin header__navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  height: 3.12rem;
+}
+
+@mixin navbar__logo {
+  cursor: pointer;
+}
+
+@mixin navbar__socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  margin-right: auto;
+  margin-left: 33px;
+}
+
+@mixin navbar__menu {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  list-style: none;
+  color: #fff;
+  font-family: $secondary-font;
+
+  margin-right: 1.875rem;
+}
+
+@mixin menu__item {
+  font-size: 17px;
+  cursor: pointer;
+
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+@mixin item__cart {
+  width: 1.375rem;
+  height: 1.313rem;
+}
+
+.header * {
+  color: #fff;
+}

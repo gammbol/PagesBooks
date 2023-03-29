@@ -1,0 +1,122 @@
+@use '../Globals/global';
+@use '../Globals/button';
+@use '../Header/header';
+
+$primary-color: #1B3764;
+$secondary-color: #FFCA42;
+$additional-color: #F6F8FC;
+$desc-color: #B4C7E7;
+
+$primary-font: Cardo, "serif";
+$secondary-font: Inter, "sans-serif";
+
+$h2-size: 45px;
+
+// button
+$button-size: 1.188rem;
+$paddingY: 0.813rem;
+$paddingX: 2.063rem;
+
+// list
+$list-style-image: "/images/list-style-image.svg";
+
+* { @include global.global }
+.header { @include header.header }
+.header__container { @include header.header__container}
+.header__navbar { @include header.header__navbar }
+.navbar__logo { @include header.navbar__logo }
+.navbar__socials { @include header.navbar__socials }
+.navbar__menu { @include header.navbar__menu }
+.menu__item { @include header.menu__item }
+.button { @include button.button($button-size, $paddingY, $paddingX) }
+
+.header__content {
+  padding: 5.938rem 0 7.188rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+
+.content__container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.content__welcome {
+  font-style: italic;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  &:before {
+    content: '';
+    width: 34px;
+    border-top: 1px solid $secondary-color;
+
+    margin-right: 15px;
+  }
+}
+
+.content__heading {
+  margin-top: 16px;
+  font-size: 4.063rem;
+}
+
+.content__desc {
+  margin-top: 32px;
+  color: $desc-color;
+  font-size: 1.188rem;
+}
+
+.content__order {
+  display: flex;
+  gap: 2.313rem;
+  align-items: center;
+  margin-top: 49px;
+}
+
+.content__more {
+  font-size: 1.188rem;
+  color: #fff;
+  text-decoration: none;
+
+  padding: 0.188rem 5px 0;
+  border-bottom: 1px solid #fff;
+}
+
+.content__book {
+  width: 100%;
+  height: 100%;
+  max-height: 800px;
+  max-width: 592px;
+}
+
+.book__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content__stats {
+  margin-top: 49px;
+}
+
+.stats__list {
+  list-style-image: url($list-style-image);
+  font-size: 1rem;
+
+  display: flex;
+  justify-content: flex-start;
+  gap: 5rem;
+
+  padding-left: 20px;
+}
+
+.item__stat {
+  font-family: $secondary-font;
+  font-size: 0.8rem;
+  color: $desc-color;
+}
