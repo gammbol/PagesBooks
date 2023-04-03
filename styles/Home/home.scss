@@ -301,7 +301,7 @@ html {
 }
 
 .book-stats {
-  list-style-image: url("/images/list-style-image.svg");
+  list-style-image: $list-style-image;
   display: flex;
   justify-content: center;
   gap: 6rem;
