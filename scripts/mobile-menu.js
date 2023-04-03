@@ -7,7 +7,7 @@ const menuCart = document.querySelector('.menu__cart');
 mobileMenuBtn.addEventListener('click', (e) => {
 	e.preventDefault();
 	isOpened = !isOpened
-	mobileMenu.style.top = isOpened ? '70px' : '-1000px';
+	mobileMenu.style.top = isOpened ? '69px' : '-1000px';
 	document.body.style.overflow = isOpened ? 'hidden' : 'auto';
 });
 
