@@ -24,6 +24,25 @@
 </head>
 <body>
   <header class="header">
+    <div class="header__mobile-menu">
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item">Home</li>
+        <li class="mobile-menu__item">Pages</li>
+        <li class="mobile-menu__item">About</li>
+        <li class="mobile-menu__item">Services</li>
+        <li class="mobile-menu__item">Contact</li>
+        <li class="mobile-menu__item">
+          <button class="mobile-menu__cart">
+            <img src="/images/carts/navbar-cart.svg" alt="" class="menu__cart">
+          </button>
+        </li>
+        <li class="mobile-menu__item">
+          <button class="mobile-menu__order">
+            Order Now
+          </button>
+        </li>
+      </ul>
+    </div>
     <div class="header__container">
       <nav class="header__navbar">
         <img src="images/logos/Logo.svg" alt="" class="navbar__logo">
@@ -51,9 +70,12 @@
           <li class="menu__item">Services</li>
           <li class="menu__item">Contact</li>
           <li class="menu__item">
-            <img src="images/navbar-cart.svg" alt="" class="item__cart">
+            <img src="images/carts/navbar-cart.svg" alt="" class="item__cart">
           </li>
         </ul>
+        <button class="navbar__open">
+          <img src="/images/mobile-menu.png" alt="" class="open__img">
+        </button>
         <button class="header__button">Order Today</button>
       </nav>
     </div>
@@ -93,6 +115,6 @@
       </div>
     </div>
   </section>
-
+  <script src="/scripts/mobile-menu.js"></script>
 </body>
 </html>

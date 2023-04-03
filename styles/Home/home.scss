@@ -42,12 +42,34 @@ $list-style-image: "../../images/list-style-image.svg";
 .socials__img { @include header.socials__img }
 .navbar__menu { @include header.navbar__menu }
 .menu__item { @include header.menu__item }
+.navbar__open { @include header.navbar__open }
+.open__img { @include header.open__img }
 .header__button { @include header.header__button($button-size, $paddingY, $paddingX) }
 .button { @include button.button($button-size, $paddingY, $paddingX) }
+
+.header__mobile-menu { @include header.header__mobile-menu }
+.mobile-menu__list { @include header.mobile-menu__list }
+.mobile-menu__item {
+  @include header.mobile-menu__item;
+  &:last-of-type {
+    box-sizing: content-box;
+  }
+}
+.mobile-menu__cart { @include header.mobile-menu_-cart }
+.mobile-menu__order {
+  @include button.button(1rem, $paddingY, $paddingX);
+  transition: .3s all ease-in-out;
+  &:hover {
+    color: #fff !important;
+  }
+}
+
+
 
 @media screen and (max-width: 960px) {
   .header__container {
     padding-top: 10px !important;
+    padding-bottom: 10px !important;
   }
   .content__container {
     gap: 2rem !important;

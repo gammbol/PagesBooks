@@ -2,13 +2,11 @@ $primary-color: #1B3764;
 $secondary-color: #FFCA42;
 
 @mixin button($size, $pY, $pX) {
-  color: #1B3764 !important;
+  color: #1B3764;
   padding: $pY $pX;
   outline: none;
   border: none;
   background: $secondary-color;
   cursor: pointer;
-
-
   font-size: $size;
 }

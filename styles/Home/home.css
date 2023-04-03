@@ -10,6 +10,8 @@
 }
 
 .header {
+  position: sticky;
+  top: 0;
   background: #1B3764;
   display: flex;
   flex-direction: column;
@@ -20,7 +22,7 @@
 .header__container {
   width: 100%;
   max-width: 1300px;
-  padding: 2.7rem 0.7rem 0;
+  padding: 2rem 0.7rem;
 }
 
 .header__navbar {
@@ -70,7 +72,6 @@
   gap: 30px;
   list-style: none;
   color: #fff;
-  font-family: Inter, "sans-serif";
   margin-right: 1.875rem;
 }
 @media screen and (max-width: 1034px) {
@@ -86,11 +87,31 @@
 
 .menu__item {
   font-size: 17px;
+  font-family: Inter, "sans-serif";
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
 .menu__item:hover {
   opacity: 0.8;
+}
+
+.navbar__open {
+  display: none;
+  height: 2rem;
+  width: 2rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .navbar__open {
+    display: block;
+  }
+}
+
+.open__img {
+  width: 100%;
+  height: 100%;
 }
 
 .header__button {
@@ -109,7 +130,7 @@
 }
 
 .button {
-  color: #1B3764 !important;
+  color: #1B3764;
   padding: 0.813rem 2.063rem;
   outline: none;
   border: none;
@@ -118,9 +139,71 @@
   font-size: 1.188rem;
 }
 
+.header__mobile-menu {
+  display: flex;
+  position: absolute;
+  top: -1000px;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: #1B3764;
+  transition: 0.3s all ease-in-out;
+}
+
+.mobile-menu__list {
+  width: 100%;
+  margin-top: 60px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  gap: 2rem;
+  align-items: center;
+}
+
+.mobile-menu__item {
+  transition: 0.3s all ease-in-out;
+  font-family: Inter, "sans-serif";
+  cursor: pointer;
+  width: 40%;
+  text-align: center;
+  border-radius: 15px;
+  padding: 1rem 2rem;
+}
+.mobile-menu__item:hover:not(:last-of-type) {
+  background: #F6F8FC;
+  color: #1B3764;
+}
+.mobile-menu__item:last-of-type {
+  box-sizing: content-box;
+}
+
+.mobile-menu__cart {
+  background: transparent;
+  border: none;
+}
+
+.mobile-menu__order {
+  color: #1B3764;
+  padding: 0.813rem 2.063rem;
+  outline: none;
+  border: none;
+  background: #FFCA42;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s all ease-in-out;
+}
+.mobile-menu__order:hover {
+  color: #fff !important;
+}
+
 @media screen and (max-width: 960px) {
   .header__container {
     padding-top: 10px !important;
+    padding-bottom: 10px !important;
   }
   .content__container {
     gap: 2rem !important;
