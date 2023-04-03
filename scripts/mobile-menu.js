@@ -6,8 +6,9 @@ const menuCart = document.querySelector('.menu__cart');
 
 mobileMenuBtn.addEventListener('click', (e) => {
 	e.preventDefault();
-	isOpened = !isOpened
-	mobileMenu.style.top = isOpened ? '69px' : '-1000px';
+	isOpened = !isOpened;
+	mobileMenu.style.opacity = isOpened ? '1' : '0';
+	mobileMenu.style.top = isOpened ? '69px' : '-100vh';
 	document.body.style.overflow = isOpened ? 'hidden' : 'auto';
 });
 
