@@ -12,9 +12,9 @@ mobileMenuBtn.addEventListener('click', (e) => {
 });
 
 menuCartWrapper.addEventListener('mouseover', () => {
-	menuCart.src = "/images/carts/cart-primary.svg";
+	menuCart.src = "images/carts/cart-primary.svg";
 });
 
 menuCartWrapper.addEventListener('mouseout', () => {
-	menuCart.src = "/images/carts/cart-white.svg";
+	menuCart.src = "images/carts/cart-white.svg";
 });
