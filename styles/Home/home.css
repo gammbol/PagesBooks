@@ -130,7 +130,7 @@
 }
 
 .button {
-  color: #1B3764;
+  color: #1B3764 !important;
   padding: 0.813rem 2.063rem;
   outline: none;
   border: none;
@@ -187,7 +187,7 @@
 }
 
 .mobile-menu__order {
-  color: #1B3764;
+  color: #1B3764 !important;
   padding: 0.813rem 2.063rem;
   outline: none;
   border: none;
