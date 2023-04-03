@@ -173,6 +173,9 @@
   border-radius: 15px;
   padding: 1rem 2rem;
 }
+.mobile-menu__item:last-of-type {
+  padding: 0 2rem;
+}
 .mobile-menu__item:hover:not(:last-of-type) {
   background: #F6F8FC;
   color: #1B3764;

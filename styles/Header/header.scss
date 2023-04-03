@@ -168,6 +168,9 @@ $secondary-font: Inter, "sans-serif";
   text-align: center;
   border-radius: 15px;
   padding: 1rem 2rem;
+  &:last-of-type {
+    padding: 0 2rem;
+  }
   &:hover:not(:last-of-type) {
     background: $additional-color;
     color: $primary-color;
