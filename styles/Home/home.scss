@@ -17,7 +17,7 @@ $secondary-font: Inter, "sans-serif";
 $stats__heading: 1.5rem; // 24px
 $stats__desc: 1.125rem; // 18px
 $content__heading: 4.063rem; // 65px
-$content__heading-sm: 2.5rem; // 40px
+$content__heading-sm: 2rem; // 40px
 $content__desc: 1.188rem; // 19px
 $normal: 1rem; // 16px
 $secondary-heading: 2.813rem; // 45px
@@ -105,9 +105,10 @@ $list-style-image: "../../images/list-style-image.svg";
   }
   .stats__list {
     padding-left: 0 !important;
-    gap: 2.5rem !important;
+    gap: 1.5rem !important;
     justify-content: center !important;
     list-style: none !important;
+    flex-wrap: wrap !important;
   }
   .item__heading {
     font-size: 1.5rem !important;
@@ -332,6 +333,8 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #F4F8FF;
+  padding: 9.375rem 0 calc(9.375rem + 2.5rem);
 }
 
 .about-container {
@@ -353,7 +356,7 @@ html {
   max-width: 34.375rem;
   max-height: 40.625rem;
   position: relative;
-  z-index: -1;
+  z-index: 0;
 
   &:before {
     content: '';
@@ -379,8 +382,13 @@ html {
 }
 
 .about-heading {
+  width: 100%;
   color: $primary-color;
   font-size: $secondary-heading;
+
+  @media screen and (max-width: 768px) {
+    font-size: 2.5rem !important;
+  }
 }
 
 .about-hr {
@@ -395,6 +403,10 @@ html {
   margin-top: 1.375rem;
   font-size: $content__desc;
   color: $desc-secondary-color;
+
+  @media screen and (max-width: 768px) {
+    font-size: 0.75rem !important;
+  }
 }
 
 .about-stats {
@@ -415,16 +427,36 @@ html {
   &:nth-of-type(3) {
     padding-left: 2rem;
   }
+
+  @media screen and (max-width: 768px) {
+    &:nth-of-type(1) {
+      padding-right: 1rem !important;
+    }
+    &:nth-of-type(2) {
+      padding: 0 1rem !important;
+    }
+    &:nth-of-type(3) {
+      padding-left: 1rem !important;
+    }
+  }
 }
 
 .about-stats-heading {
   font-size: 3.438rem;
   color: $primary-color;
+
+  @media screen and (max-width: 768px) {
+    font-size: 2rem;
+  }
 }
 
 .about-stats-desc {
   color: $desc-secondary-color;
   font-size: $stats__desc;
+
+  @media screen and (max-width: 768px) {
+    font-size: 0.75rem;
+  }
 }
 
 .about-contacts {
@@ -468,9 +500,88 @@ html {
 .contacts-name {
   color: $secondary-color;
   font-size: 1.375rem;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+  }
 }
 
 .contacts-mail, .contacts-tel {
   font-size: $content__desc;
   color: $desc-color;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1rem !important;
+  }
+}
+
+.partners {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.partners-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 131px 20px 141px;
+
+  @media screen and (max-width: 768px) {
+    padding: 60px 20px 70px;
+  }
+}
+
+.partners-heading{
+  font-size: $secondary-heading;
+  color: $primary-color;
+
+  @media screen and (max-width: 768px) {
+    font-size: 2rem !important;
+  }
+}
+
+.partners-hr {
+  width: 3.438rem;
+  height: 0.188rem;
+  border: none;
+  background: $secondary-color;
+  margin-top: 1.375rem;
+}
+
+.partners-list {
+  list-style: none;
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    gap: 90px;
+  }
+}
+
+.partners-item {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.partners-item-heading {
+  color: $primary-color;
+  font-size: $stats__heading;
+  margin-top: 1.875rem;
+}
+
+.partners-item-desc {
+  margin-top: 8px;
+  font-size: $stats__desc;
+  color: #969AA0;
+  text-align: center;
 }

@@ -6,6 +6,7 @@ $primary-font: Cardo, "serif";
 $secondary-font: Inter, "sans-serif";
 
 @mixin header() {
+  z-index: 9999;
   position: sticky;
   top: 0;
   background: $primary-color;
