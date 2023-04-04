@@ -462,4 +462,153 @@ html {
   background: #FFCA42;
 }
 
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 11.375rem;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+  .about-container {
+    gap: 1rem;
+  }
+}
+
+.about-author {
+  width: 100%;
+  height: 100%;
+  max-width: 34.375rem;
+  max-height: 40.625rem;
+  position: relative;
+  z-index: -1;
+}
+.about-author:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 2.5rem;
+  left: 2.5rem;
+  border: 0.75rem solid #FFCA42;
+  z-index: -1;
+}
+@media screen and (max-width: 768px) {
+  .about-author:before {
+    display: none;
+  }
+}
+
+.author-img {
+  width: 100%;
+  height: 100%;
+}
+
+.about-content {
+  flex-basis: 35.5rem;
+}
+
+.about-heading {
+  color: #1B3764;
+  font-size: 2.813rem;
+}
+
+.about-hr {
+  width: 3.438rem;
+  height: 3px;
+  border: none;
+  background: #FFCA42;
+  margin-top: 1.375rem;
+}
+
+.about-desc {
+  margin-top: 1.375rem;
+  font-size: 1.188rem;
+  color: #969AA0;
+}
+
+.about-stats {
+  margin-top: 2.75rem;
+  list-style: none;
+  display: flex;
+}
+
+.about-stats-item:nth-of-type(1) {
+  padding-right: 2rem;
+}
+.about-stats-item:nth-of-type(2) {
+  padding: 0 2rem;
+  border-right: 1px solid #FFCA42;
+  border-left: 1px solid #FFCA42;
+}
+.about-stats-item:nth-of-type(3) {
+  padding-left: 2rem;
+}
+
+.about-stats-heading {
+  font-size: 3.438rem;
+  color: #1B3764;
+}
+
+.about-stats-desc {
+  color: #969AA0;
+  font-size: 1.125rem;
+}
+
+.about-contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.5rem;
+  padding: 0.938rem 1.125rem;
+  background: #1B3764;
+  max-width: 477px;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .about-contacts {
+    margin: 1rem auto 0;
+    flex-direction: column;
+    justify-content: center !important;
+    gap: 1rem;
+  }
+}
+
+.about-contacts-qr-wrapper {
+  width: 100%;
+  height: 100%;
+  max-width: 8.125rem;
+  max-height: 8.125rem;
+}
+
+.about-contacts-qr {
+  width: 100%;
+  height: 100%;
+}
+
+.about-contacts-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 7px;
+}
+
+.contacts-name {
+  color: #FFCA42;
+  font-size: 1.375rem;
+}
+
+.contacts-mail, .contacts-tel {
+  font-size: 1.188rem;
+  color: #B4C7E7;
+}
+
 /*# sourceMappingURL=home.css.map */
