@@ -341,9 +341,8 @@ html {
   gap: 11.375rem;
   padding: 0 20px;
 
-  flex-wrap: wrap;
-
   @media screen and (max-width: 768px) {
+    flex-wrap: wrap;
     gap: 1rem;
   }
 }
