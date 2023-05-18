@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.button-sm-fill {
+  font-size: 19px;
+  padding: 20px 56px;
+  background-color: #FFCA42;
+  border: 1px solid #FFCA42;
+}
+
+.button-sm-outline {
+  padding: 20px 56px;
+  background-color: #fff;
+  border: 1px solid #FFCA42;
+}
+
+.button-bg-fill {
+  padding: 20px 96px;
+  background-color: #FFCA42;
+  border: 1px solid #FFCA42;
+}
+
+.button-bg-outline {
+  padding: 20px 96px;
+  background-color: #fff;
+  border: 1px solid #FFCA42;
+}
+
+.heading-2xl {
+  color: #1B3764;
+  font-size: 65px;
+  font-family: "Cardo", serif;
+  letter-spacing: -0.015em;
+}
+
+.heading-xl {
+  color: #1B3764;
+  font-size: 55px;
+  font-family: "Cardo", serif;
+  letter-spacing: -0.015em;
+}
+
+.heading-lg {
+  color: #1B3764;
+  font-size: 45px;
+  font-family: "Cardo", serif;
+  letter-spacing: -0.015em;
+}
+
+.heading-md {
+  color: #1B3764;
+  font-size: 32px;
+  font-family: "Cardo", serif;
+  letter-spacing: -0.015em;
+}
+
+.heading-sm {
+  color: #1B3764;
+  font-size: 24px;
+  font-family: "Cardo", serif;
+  letter-spacing: -0.015em;
+}
+
+.heading-tn {
+  color: #1B3764;
+  font-size: 22px;
+  font-family: "Cardo", serif;
+  letter-spacing: -0.015em;
+}
+
+/*# sourceMappingURL=global.css.map */

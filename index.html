@@ -1,241 +1,123 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <!-- charset and viewport width -->
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- tab name and icon -->
-  <title>Pages Bookshop</title>
-  <link rel="shortcut icon" href="images/logos/favicon.svg">
-
-  <!-- css -->
-  <link rel="stylesheet" href="styles/Home/home.css">
-
-  <!-- Cardo fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
-
-  <!-- Inter fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pages Books</title>
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/header.css">
 </head>
 <body>
-  <header class="header">
-    <div class="header__mobile-menu">
-      <ul class="mobile-menu__list">
-        <li class="mobile-menu__item">Home</li>
-        <li class="mobile-menu__item">Pages</li>
-        <li class="mobile-menu__item">About</li>
-        <li class="mobile-menu__item">Services</li>
-        <li class="mobile-menu__item">Contact</li>
-        <li class="mobile-menu__item">
-          <button class="mobile-menu__cart">
-            <img src="images/carts/cart-white.svg" alt="" class="menu__cart">
-          </button>
+<header>
+  <div class="container">
+    <a href="#"><img class="header-logo" src="images/logos/Logo.svg" alt="logo"/></a>
+    <div class="header-socials">
+      <a href="#"><img class="socials-img" src="images/socials/facebook.svg" alt="facebook"></a>
+      <a href="#"><img class="socials-img" src="images/socials/twitter.svg" alt="twitter"></a>
+      <a href="#"><img class="socials-img" src="images/socials/linkedin.svg" alt="linkedin"></a>
+    </div>
+    <nav class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Pages</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+    <a class="header-cart-link" href="#"><img class="header-cart" src="images/carts/cart-white.svg" alt="cart"></a>
+    <button class="header-button">Order Today</button>
+  </div>
+</header>
+<main>
+  <div class="container">
+    <div class="hero-content">
+      <h6 class="hero-welcome">Welcome to Pages</h6>
+      <h1 class="heading-2xl hero-heading">
+        Books are uniquely portable magic
+      </h1>
+      <p class="paragraph hero-paragraph">
+        There are many variations of passages of Lorem Ipsum available,
+        but the majority have suffered alteration in some form.
+      </p>
+      <div class="hero-order">
+        <button class="button-sm-fill">Order Today</button>
+        <a href="#">Read Free Demo</a>
+      </div>
+      <ul class="hero-stats list">
+        <li>
+          <h5 class="heading-sm hero-stats-item">Pages</h5>
+          <p class="paragraph">586 pages</p>
         </li>
-        <li class="mobile-menu__item">
-          <button class="mobile-menu__order">
-            Order Now
-          </button>
+        <li>
+          <h5 class="heading-sm hero-stats-item">Length</h5>
+          <p class="paragraph">10 hours</p>
+        </li>
+        <li>
+          <h5 class="heading-sm hero-stats-item">Ratings</h5>
+          <p class="paragraph">4.5/5 (305 ratings)</p>
         </li>
       </ul>
     </div>
-    <div class="header__container">
-      <nav class="header__navbar">
-        <img src="images/logos/Logo.svg" alt="" class="navbar__logo">
-        <div class="navbar__socials">
-          <div class="socials__wrapper">
-            <a href="" class="socials__social">
-              <img src="images/socials/facebook.svg" alt="facebook" class="socials__img">
-            </a>
-          </div>
-          <div class="socials__wrapper">
-            <a href="" class="socials__social">
-              <img src="images/socials/twitter.svg" alt="twitter" class="socials__img">
-            </a>
-          </div>
-          <div class="socials__wrapper">
-            <a href="" class="socials__social">
-              <img src="images/socials/linkedin.svg" alt="linkedin" class="socials__img">
-            </a>
-          </div>
-        </div>
-        <ul class="navbar__menu">
-          <li class="menu__item">Home</li>
-          <li class="menu__item">Pages</li>
-          <li class="menu__item">About</li>
-          <li class="menu__item">Services</li>
-          <li class="menu__item">Contact</li>
-          <li class="menu__item">
-            <img src="images/carts/cart-white.svg" alt="" class="item__cart">
-          </li>
-        </ul>
-        <button class="navbar__open">
-          <img src="images/mobile-menu.png" alt="" class="open__img">
-        </button>
-        <button class="header__button">Order Today</button>
-      </nav>
+    <div class="hero-book">
+      <img src="images/contentBook.png" alt="books">
     </div>
-  </header>
-  <section class="hero__content">
-    <div class="content__container container">
-      <div class="content__wrapper">
-        <p class="content__welcome">Welcome to Pages</p>
-        <h1 class="content__heading">Books are uniquely portable magic</h1>
-        <p class="content__desc">
-          There are many variations of passages of Lorem Ipsum available,
-          but the majority have suffered alteration in some form.
-        </p>
-        <div class="content__order">
-          <button class="button">Order Today</button>
-          <a href="#" class="content__more">Read Free Demo</a>
+  </div>
+</main>
+<section class="books">
+  <div class="container">
+    <h3 class="heading-lg books-heading">Author's Book Includes</h3>
+    <div class="books-wrapper">
+      <div class="books-item">
+        <div class="books-img">
+          <img src="images/books/book1.png" alt="book 1">
         </div>
-        <div class="content__stats">
-          <ul class="stats__list">
-            <li class="stats__item">
-              <h2 class="item__heading">Pages:</h2>
-              <p class="item__stat">586 pages</p>
+        <div class="books-content">
+          <h4 class="heading-md">Atomic One's</h4>
+          <p class="paragraph">
+            Many variations of passages of
+            Lorem Ipsum willing arise alteration
+            in some form.
+          </p>
+          <ul class="books-list list">
+            <li>
+              <h5 class="heading-sm books-list-heading">Pages</h5>
+              <p class="paragraph books-list-paragraph">586 pages</p>
             </li>
-            <li class="stats__item">
-              <h2 class="item__heading">Length:</h2>
-              <p class="item__stat">10 Hours</p>
-            </li>
-            <li class="stats__item">
-              <h2 class="item__heading">Ratings:</h2>
-              <p class="item__stat">4.5/5 (305 ratings)</p>
+            <li>
+              <h5 class="heading-sm books-list-heading">Length</h5>
+              <p class="paragraph books-list-paragraph">10 hours</p>
             </li>
           </ul>
+          <button class="button-sm-outline">Order Today</button>
         </div>
       </div>
-      <div class="content__book">
-        <img src="images/contentBook.png" alt="content book" class="book__img">
-      </div>
-    </div>
-  </section>
-  <section class="author-books">
-    <div class="author-books-container container">
-      <h1 class="author-books-heading">Author’s Book Includes</h1>
-      <div class="author-books-content">
-        <div class="author-books-book">
-          <div class="book-img-wrapper">
-            <img src="images/books/book1.png" alt="" class="book-img">
-          </div>
-          <div class="book-content">
-            <h2 class="book-heading">Atomic One's</h2>
-            <p class="book-desc">
-              Many variations of passages of Lorem Ipsum willing araise alteration in some form.
-            </p>
-            <ul class="book-stats">
-              <li class="book-stats-item">
-                <h3 class="book-stats-heading">Pages:</h3>
-                <p class="book-stats-desc">586 pages</p>
-              </li>
-              <li class="book-stats-item">
-                <h3 class="book-stats-heading">Length:</h3>
-                <p class="book-stats-desc">10 Hours</p>
-              </li>
-            </ul>
-            <button class="book-stats-btn">Order Today</button>
-          </div>
+      <div class="books-item">
+        <div class="books-img">
+          <img src="images/books/book2.png" alt="book 2">
         </div>
-        <div class="author-books-book">
-          <div class="book-img-wrapper">
-            <img src="images/books/book2.png" alt="" class="book-img">
-          </div>
-          <div class="book-content">
-            <h2 class="book-heading">The Dark Light</h2>
-            <p class="book-desc">
-              Many variations of passages of Lorem Ipsum willing araise alteration in some form.
-            </p>
-            <ul class="book-stats">
-              <li class="book-stats-item">
-                <h3 class="book-stats-heading">Pages:</h3>
-                <p class="book-stats-desc">586 pages</p>
-              </li>
-              <li class="book-stats-item">
-                <h3 class="book-stats-heading">Length:</h3>
-                <p class="book-stats-desc">10 Hours</p>
-              </li>
-            </ul>
-            <button class="book-stats-btn">Order Today</button>
-          </div>
+        <div class="books-content">
+          <h4 class="heading-md">The Dark Light</h4>
+          <p class="paragraph">
+            Many variations of passages of
+            Lorem Ipsum willing arise alteration
+            in some form.
+          </p>
+          <ul class="books-list list">
+            <li>
+              <h5 class="heading-sm books-list-heading">Pages</h5>
+              <p class="paragraph books-list-paragraph">586 pages</p>
+            </li>
+            <li>
+              <h5 class="heading-sm books-list-heading">Length</h5>
+              <p class="paragraph books-list-paragraph">10 hours</p>
+            </li>
+          </ul>
+          <button class="button-sm-outline">Order Today</button>
         </div>
       </div>
     </div>
-  </section>
-  <section class="about">
-    <div class="about-container container">
-      <div class="about-author">
-        <img src="images/about/about-author.png" alt="author" class="author-img">
-      </div>
-      <div class="about-content">
-        <h2 class="about-heading">About Author</h2>
-        <hr class="about-hr">
-        <p class="about-desc">
-          All the Lorem Ipsum generators on the Internet
-          tend to repeated predefined chunks as necessary,
-          making this the first true value generator on
-          the Internet. It uses a dictionary of over 200
-          Latin words, combined with a handful.
-        </p>
-        <ul class="about-stats">
-          <li class="about-stats-item">
-            <h3 class="about-stats-heading">02</h3>
-            <p class="about-stats-desc">Books published</p>
-          </li>
-          <li class="about-stats-item">
-            <h3 class="about-stats-heading">4.5</h3>
-            <p class="about-stats-desc">User Reviews</p>
-          </li>
-          <li class="about-stats-item">
-            <h3 class="about-stats-heading">04</h3>
-            <p class="about-stats-desc">Best Seller Award</p>
-          </li>
-        </ul>
-        <div class="about-contacts">
-          <div class="about-contacts-qr-wrapper">
-            <img src="images/about/qr.png" alt="" class="about-contacts-qr">
-          </div>
-          <div class="about-contacts-info">
-            <h3 class="contacts-name">John Abraham , Ph.d</h3>
-            <p class="contacts-mail">Mail : johnabraham@gmail.com</p>
-            <p class="contacts-tel">Phone : (+2) 123 545 9000</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="partners">
-    <div class="partners-container container">
-      <h1 class="partners-heading">Trusted by the Best</h1>
-      <hr class="partners-hr">
-      <ul class="partners-list">
-        <li class="partners-item">
-          <img src="images/partners/amazon.svg" alt="amazon" class="partners-img">
-          <h2 class="partners-item-heading">Amazon Corp</h2>
-          <p class="partners-item-desc">A long established fact that a who looking at its layout.</p>
-        </li>
-        <li class="partners-item">
-          <img src="images/partners/meganbooks.svg" alt="amazon" class="partners-img">
-          <h2 class="partners-item-heading">Amazon Corp</h2>
-          <p class="partners-item-desc">A long established fact that a who looking at its layout.</p>
-        </li>
-        <li class="partners-item">
-          <img src="images/partners/megank.svg" alt="amazon" class="partners-img">
-          <h2 class="partners-item-heading">Amazon Corp</h2>
-          <p class="partners-item-desc">A long established fact that a who looking at its layout.</p>
-        </li>
-        <li class="partners-item">
-          <img src="images/partners/urbanlib.svg" alt="amazon" class="partners-img">
-          <h2 class="partners-item-heading">Amazon Corp</h2>
-          <p class="partners-item-desc">A long established fact that a who looking at its layout.</p>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <script src="scripts/mobile-menu.js"></script>
+  </div>
+</section>
 </body>
 </html>
