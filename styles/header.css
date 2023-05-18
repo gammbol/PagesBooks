@@ -100,7 +100,7 @@
 
 .list {
   margin-left: 22px;
-  list-style-image: url("/images/list-style-image.svg");
+  list-style-image: url("../images/list-style-image.svg");
 }
 
 @media screen and (max-width: 992px) {
