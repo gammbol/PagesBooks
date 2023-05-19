@@ -183,6 +183,9 @@
   .about-author::after {
     display: none;
   }
+  .partners > div {
+    padding: 70px 15px !important;
+  }
 }
 .container {
   max-width: 1300px;
