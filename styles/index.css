@@ -427,7 +427,35 @@ main > div {
   height: 100%;
 }
 
+.partners > div {
+  padding: 140px 15px;
+}
+
 .partners-heading {
+  text-align: center;
+}
+
+.partners-list {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.partners-list-item {
+  flex-basis: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.partners-list-item .heading-sm {
+  margin-top: 30px;
+}
+
+.partners-list-item p {
   text-align: center;
 }
 
