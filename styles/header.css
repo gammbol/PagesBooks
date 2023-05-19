@@ -103,6 +103,24 @@
   list-style-image: url("/images/list-style-image.svg");
 }
 
+.underline-left::after {
+  content: "";
+  width: 55px;
+  height: 2px;
+  background-color: #FFCA42;
+  display: block;
+  margin-top: 22px;
+}
+
+.underline-center::after {
+  content: "";
+  display: block;
+  width: 55px;
+  height: 2px;
+  background-color: #FFCA42;
+  margin: 22px auto 0;
+}
+
 @media screen and (max-width: 992px) {
   .header-socials {
     display: none !important;
@@ -119,6 +137,7 @@
 header {
   background-color: #1B3764;
   position: sticky;
+  z-index: 9999;
   top: 0;
 }
 

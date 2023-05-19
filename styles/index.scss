@@ -64,6 +64,9 @@
   .about-content * {
     text-align: center;
   }
+  .about-author::after {
+    display: none;
+  }
 }
 
 .container {
@@ -183,15 +186,6 @@ main>div {
 
 .books-heading {
   text-align: center;
-
-  &::after {
-    content: '';
-    display: block;
-    width: 55px;
-    height: 2px;
-    background-color: $primary-color;
-    margin: 22px auto 0;
-  }
 }
 
 .books-content h4 {
@@ -233,20 +227,24 @@ main>div {
 .about-author {
   max-width: 550px;
   max-height: 650px;
+  position: relative;
+  z-index: 1;
+}
+
+.about-author::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 12px solid $primary-color;
+  top: 2.5rem;
+  left: 2.5rem;
+  z-index: -1;
 }
 
 .about-author img {
   width: 100%;
   height: 100%;
-}
-
-.about-heading::after {
-  content: '';
-  width: 55px;
-  height: 2px;
-  background-color: $primary-color;
-  display: block;
-  margin-top: 22px;
 }
 
 .about-content {
@@ -309,6 +307,7 @@ main>div {
 
 .about-contact-content>p {
   margin-top: 7px;
+  line-height: 1.8;
 }
 
 .about-contact-qr {
@@ -319,4 +318,8 @@ main>div {
 .about-contact-qr img {
   width: 100%;
   height: 100%;
+}
+
+.partners-heading {
+  text-align: center;
 }
