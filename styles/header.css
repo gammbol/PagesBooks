@@ -23,7 +23,7 @@
   font-size: 1.188rem;
   font-family: "Cardo", serif;
   padding: 20px 56px;
-  background-color: #fff;
+  background-color: transparent;
   border: 1px solid #FFCA42;
   cursor: pointer;
   transition: 0.3s;
@@ -45,7 +45,7 @@
   font-size: 1.188rem;
   font-family: "Cardo", serif;
   padding: 20px 96px;
-  background-color: #fff;
+  background-color: transparent;
   border: 1px solid #FFCA42;
   cursor: pointer;
 }

@@ -23,7 +23,7 @@
   font-size: 1.188rem;
   font-family: "Cardo", serif;
   padding: 20px 56px;
-  background-color: #fff;
+  background-color: transparent;
   border: 1px solid #FFCA42;
   cursor: pointer;
   transition: 0.3s;
@@ -45,7 +45,7 @@
   font-size: 1.188rem;
   font-family: "Cardo", serif;
   padding: 20px 96px;
-  background-color: #fff;
+  background-color: transparent;
   border: 1px solid #FFCA42;
   cursor: pointer;
 }
@@ -196,6 +196,9 @@
   }
   .partners-list {
     gap: 6rem !important;
+  }
+  .getbook-img {
+    display: none;
   }
 }
 .container {
@@ -471,6 +474,45 @@ main > div {
 
 .partners-list-item p {
   text-align: center;
+}
+
+.getbook {
+  background-color: #1B3764;
+}
+
+.getbook > div {
+  padding: 37px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 127px;
+}
+
+.getbook-content {
+  flex-basis: 567px;
+}
+
+.getbook-heading {
+  color: #fff !important;
+}
+
+.getbook-content p {
+  margin-top: 22px;
+}
+
+.getbook-button {
+  margin-top: 31px;
+  color: #fff;
+}
+
+.getbook-img {
+  max-width: 640px;
+  max-height: 427px;
+}
+
+.getbook-img img {
+  width: 100%;
+  height: 100%;
 }
 
 /*# sourceMappingURL=index.css.map */

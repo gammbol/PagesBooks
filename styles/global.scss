@@ -38,7 +38,7 @@ $paragraph-color: #969AA0;
   font-size: 1.188rem;
   font-family: $primary-font;
   padding: 20px 56px;
-  background-color: #fff;
+  background-color: transparent;
   border: 1px solid $primary-color;
   cursor: pointer;
   transition: .3s;
@@ -61,7 +61,7 @@ $paragraph-color: #969AA0;
   font-size: 1.188rem;
   font-family: $primary-font;
   padding: 20px 96px;
-  background-color: #fff;
+  background-color: transparent;
   border: 1px solid $primary-color;
   cursor: pointer;
 }
