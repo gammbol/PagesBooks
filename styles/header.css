@@ -178,6 +178,7 @@ header > div {
   display: flex;
   align-items: center;
   gap: 10px;
+  list-style: none;
 }
 
 .header-socials a {
