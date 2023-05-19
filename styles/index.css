@@ -200,6 +200,12 @@
   .getbook-img {
     display: none;
   }
+  .prospects > div {
+    padding: 70px 15px;
+  }
+  .prospects-img {
+    display: none;
+  }
 }
 .container {
   max-width: 1300px;
@@ -511,6 +517,77 @@ main > div {
 }
 
 .getbook-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.prospects {
+  overflow: hidden;
+}
+
+.prospects > div {
+  padding: 145px 30px;
+}
+
+.prospects-heading {
+  text-align: center;
+}
+
+.prospects-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  flex-wrap: wrap-reverse;
+  margin-top: 53px;
+}
+
+.prospects-list {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  flex-basis: 611px;
+}
+
+.prospects-item {
+  padding: 41px 33px;
+  max-width: 224px;
+  background-color: #F4F8FF;
+}
+
+.prospects-item-heading {
+  display: inline-block;
+  border-radius: 100%;
+  background-color: #FFCA42;
+  padding: 10px 12px;
+}
+
+.prospects-item-sub {
+  margin-top: 31px;
+  font-size: 1.5rem;
+  color: #1B3764;
+  font-weight: 700;
+}
+
+.prospects-img {
+  max-width: 550px;
+  max-height: 650px;
+  position: relative;
+}
+
+.prospects-img::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: 12px solid #FFCA42;
+  position: absolute;
+  left: 2rem;
+  top: 2rem;
+  z-index: -1;
+}
+
+.prospects-img img {
   width: 100%;
   height: 100%;
 }
