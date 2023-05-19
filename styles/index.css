@@ -195,6 +195,9 @@
   .partners > div {
     padding: 70px 15px !important;
   }
+  .partners-list {
+    gap: 6rem !important;
+  }
 }
 .container {
   max-width: 1300px;

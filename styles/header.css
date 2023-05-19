@@ -151,6 +151,11 @@ header {
   color: #fff;
   font-family: "Inter", sans-serif;
   text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #FFCA42;
 }
 
 .header-button {
