@@ -183,6 +183,15 @@
   .about-author::after {
     display: none;
   }
+  .about-contact {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-contact-qr {
+    max-width: 70px;
+    max-height: 70px;
+  }
   .partners > div {
     padding: 70px 15px !important;
   }
