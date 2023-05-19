@@ -109,7 +109,7 @@
   height: 2px;
   background-color: #FFCA42;
   display: block;
-  margin-top: 22px;
+  margin-top: 1.375rem;
 }
 
 .underline-center::after {
@@ -118,7 +118,7 @@
   width: 55px;
   height: 2px;
   background-color: #FFCA42;
-  margin: 22px auto 0;
+  margin: 1.375rem auto 0;
 }
 
 @media screen and (max-width: 1200px) {
@@ -189,8 +189,8 @@
     align-items: center;
   }
   .about-contact-qr {
-    max-width: 70px;
-    max-height: 70px;
+    max-width: 90px !important;
+    max-height: 90px !important;
   }
   .partners > div {
     padding: 70px 15px !important;
