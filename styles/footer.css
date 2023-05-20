@@ -212,6 +212,11 @@ footer > div {
   text-decoration: none;
   font-family: "Inter", sans-serif;
   font-size: 1.125rem;
+  transition: 0.3s;
+}
+
+.footer-nav-links-item a:hover {
+  color: #FFCA42;
 }
 
 .footer-stats-container {

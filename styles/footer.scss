@@ -84,11 +84,16 @@ footer>div {
   line-height: 2.05;
 }
 
-.footer-nav-links-item a{
+.footer-nav-links-item a {
   color: #B4C7E7;
   text-decoration: none;
   font-family: $secondary-font;
   font-size: 1.125rem;
+  transition: .3s;
+}
+
+.footer-nav-links-item a:hover {
+  color: $primary-color;
 }
 
 .footer-stats-container {
