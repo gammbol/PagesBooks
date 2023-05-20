@@ -234,6 +234,10 @@
     padding: 70px 15px !important;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
 main {
   background-color: #1B3764;
 }

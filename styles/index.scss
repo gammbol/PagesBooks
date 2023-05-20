@@ -115,6 +115,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 main {
   background-color: $secondary-color;
 }
