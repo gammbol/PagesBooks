@@ -1,5 +1,19 @@
 @import 'global';
 
+@media screen and (max-width: 1300px) {
+  .feedback>div {
+    justify-content: center;
+    gap: 40px !important;
+  }
+  .feedback-clients {
+    flex-wrap: nowrap !important;
+    max-height: fit-content !important;
+  }
+  .clients-item:last-of-type {
+    margin: 0 !important;
+  }
+}
+
 // desktop
 @media screen and (max-width: 1200px) {
   .books-wrapper {
@@ -92,6 +106,12 @@
   }
   .chapters-content-item {
     padding: 24px 26px !important;
+  }
+  .chapters>div {
+    padding: 74px 15px !important;
+  }
+  .feedback>div {
+    padding: 70px 15px !important;
   }
 }
 
@@ -537,9 +557,89 @@ main>div {
 }
 
 .chapters-trial {
-  margin-top: 80px;
+  margin-top: 5rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.chapters-trial p {
+  text-align: center;
+}
+
+.chapters-trial p a {
+  color: $secondary-color;
+  font-family: $secondary-font;
+}
+
+.feedback>div {
+  padding: 140px 15px;
+
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.feedback-content {
+  flex-basis: 418px;
+}
+
+.feedback-content>p {
+  margin-top: 30px;
+}
+
+.feedback-content>img {
+  margin-top: 43px;
+}
+
+.feedback-content>img, .feedback-content>h6 {
+  display: inline-block;
+}
+
+.feedback-overall {
+  display: block;
+  margin-top: 10px;
+}
+
+.clients-item {
+  padding: 36px 31px;
+  max-width: 308px;
+  background-color: $secondary-color;
+}
+
+.clients-profile {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.profile-heading-name {
+  color: #fff !important;
+  font-weight: 500;
+}
+
+.clients-item>h6 {
+  color: #fff !important;
+  margin-top: 22px;
+}
+
+.clients-item>p {
+  margin-top: 12px;
+  color: #B4C7E7;
+}
+
+.feedback-clients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  justify-items: center;
+  flex-wrap: wrap;
+  max-height: 650px;
+  gap: 30px;
+}
+
+.clients-item:last-of-type {
+  margin-top: 210px;
 }
