@@ -1,6 +1,9 @@
 @import 'global';
 
 @media screen and (max-width: 768px) {
+  .subscription {
+    padding: 70px 15px !important;
+  }
   .subscription>div {
     padding: 60px 60px !important;
   }
