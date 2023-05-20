@@ -1,5 +1,20 @@
 @import 'global';
 
+@media screen and (max-width: 768px) {
+  .subscription>div {
+    padding: 60px 60px !important;
+  }
+  .subscription-form input {
+    padding-top: 1.25rem !important;
+    padding-bottom: 1.25rem !important;
+  }
+  .subscription-form button {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 100%;
+  }
+}
+
 .subscription {
   padding: 160px 15px;
 }
@@ -7,7 +22,7 @@
 .subscription>div {
   box-sizing: border-box;
   background-color: $primary-color;
-  padding: 121px 230px;
+  padding: 7.563rem 14.375rem;
 }
 
 .subscription-heading {
@@ -33,4 +48,27 @@
 
 .subscription-form {
   margin-top: 38px;
+
+  display: flex;
+  justify-content: center;
+  gap: 11px;
+  flex-wrap: wrap;
+}
+
+.subscription-form input {
+  flex-grow: 1;
+  border: none;
+  padding: 17px 0 17px 24px;
+}
+
+.subscription-form input::placeholder {
+  font-family: $secondary-font;
+  font-size: 1.063rem;
+}
+
+.subscription-form button {
+  background-color: $secondary-color;
+  color: #fff;
+  border: none;
+  padding: 1.25rem 6.688rem;
 }
