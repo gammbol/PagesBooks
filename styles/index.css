@@ -206,6 +206,9 @@
   .prospects-img {
     display: none;
   }
+  .chapters-content-item {
+    padding: 24px 26px !important;
+  }
 }
 .container {
   max-width: 1300px;
@@ -347,7 +350,7 @@ main > div {
 }
 
 .about {
-  background-color: #F6F8FC;
+  background-color: #F4F8FF;
 }
 
 .about > div {
@@ -590,6 +593,58 @@ main > div {
 .prospects-img img {
   width: 100%;
   height: 100%;
+}
+
+.chapters {
+  background-color: #F4F8FF;
+}
+
+.chapters > div {
+  padding: 148px 15px;
+}
+
+.chapters-heading {
+  text-align: center;
+}
+
+.chapters-content {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.chapters-content-item {
+  background-color: #fff;
+  max-width: 526px;
+  padding: 48px 52px;
+}
+
+.chapters-content-stats {
+  display: flex;
+  gap: 45px;
+}
+
+.chapters-content-item > p {
+  margin-top: 14px;
+}
+
+.chapters-content-stats {
+  margin-top: 25px;
+}
+
+.chapters-content-stats li * {
+  display: inline-block;
+}
+
+.chapters-trial {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
 }
 
 /*# sourceMappingURL=index.css.map */
