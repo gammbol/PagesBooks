@@ -194,6 +194,7 @@
 }
 
 .subscription-form button {
+  font-size: 1.188rem;
   background-color: #1B3764;
   color: #fff;
   border: none;
