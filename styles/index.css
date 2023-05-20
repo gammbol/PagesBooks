@@ -702,6 +702,10 @@ main > div {
 .feedback-overall {
   display: block;
   margin-top: 10px;
+  color: #1B3764;
+  text-decoration: none;
+  font-size: 19px;
+  font-family: "Inter", sans-serif;
 }
 
 .clients-item {
@@ -743,6 +747,70 @@ main > div {
 
 .clients-item:last-of-type {
   margin-top: 210px;
+}
+
+.articles {
+  background-color: #F4F8FF;
+}
+
+.articles > div {
+  padding: 145px 15px;
+}
+
+.articles-heading {
+  text-align: center;
+}
+
+.articles-list {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  flex-wrap: wrap;
+}
+
+.articles-item {
+  flex-basis: 410px;
+  background-color: #fff;
+  box-shadow: 0 35px 25px rgba(4, 11, 20, 0.04);
+}
+
+.articles-item-img {
+  width: 100%;
+}
+
+.articles-item h5 {
+  margin-top: 27px;
+  line-height: 1.2;
+}
+
+.articles-content-container {
+  box-sizing: border-box;
+  padding: 1.688rem 27px;
+}
+
+.articles-content-container > .paragraph {
+  margin-top: 14px;
+  line-height: 1.8;
+}
+
+.articles-stats {
+  margin-top: 1.688rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.articles-stats a {
+  color: #1B3764;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
+.articles-stats p {
+  color: #1B3764;
+  font-family: "Inter", sans-serif;
+  font-size: 1.063rem;
 }
 
 /*# sourceMappingURL=index.css.map */
