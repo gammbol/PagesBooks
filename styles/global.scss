@@ -24,6 +24,12 @@ $paragraph-color: #969AA0;
   font-family: $primary-font;
 }
 
+// width limit
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
 // buttons
 .button-sm-fill {
   font-size: 1.188rem;
