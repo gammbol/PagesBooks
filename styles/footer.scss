@@ -1,5 +1,31 @@
 @import 'global';
 
+@media screen and (max-width: 1200px) {
+  footer>div {
+    gap: 2rem !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  footer>div {
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem !important;
+  }
+  .footer-nav {
+    justify-content: center !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 42px 15px !important;
+  }
+  .footer-nav {
+    display: none !important;
+  }
+}
+
 footer {
   background-color: $secondary-color;
   padding: 84px 15px;

@@ -126,6 +126,29 @@
   margin: 1.375rem auto 0;
 }
 
+@media screen and (max-width: 1200px) {
+  footer > div {
+    gap: 2rem !important;
+  }
+}
+@media screen and (max-width: 992px) {
+  footer > div {
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem !important;
+  }
+  .footer-nav {
+    justify-content: center !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 42px 15px !important;
+  }
+  .footer-nav {
+    display: none !important;
+  }
+}
 footer {
   background-color: #1B3764;
   padding: 84px 15px;
